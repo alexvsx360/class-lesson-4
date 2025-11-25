@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <title>מרכז תרגול – תנאים ולולאות</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="container">
+  <h1>מרכז תרגול – תנאים ולולאות</h1>
+  <p class="subtitle">
+    משימה כיתתית: לבנות דף אינטרנט שמשתמש בתנאים, לולאות ופונקציות כדי לבצע תרגולים חכמים.
+    <br>
+    פתחו את ה־Console (F12) כדי לראות חלק מהתוצאות.
+  </p>
+
+  <!-- כרטיסיה 1: מספרים זוגיים -->
+  <section class="card">
+    <h2>1️⃣ מחולל מספרים זוגיים</h2>
+    <p>
+      הכניסו מספר עליון, והמערכת תציג את כל המספרים הזוגיים מ־1 ועד המספר שבחרתם.
+      השתמשו בלולאת <code>for</code> ובתנאי <code>if</code>.
+    </p>
+    <label for="even-limit">מספר עליון:</label>
+    <input type="number" id="even-limit" placeholder="למשל: 50">
+    <button id="btn-even">הצג מספרים זוגיים</button>
+    <div class="output" id="even-output"></div>
+  </section>
+
+  <!-- כרטיסיה 2: ציון באות והודעה -->
+  <section class="card">
+    <h2>2️⃣ מחשבון הודעות ציון</h2>
+    <p>
+      בחרו ציון באות (A–F) וקבלו הודעה מתאימה.
+      השתמשו ב־<code>switch</code> בתוך פונקציה.
+    </p>
+    <label for="grade-select">בחרו ציון:</label>
+    <select id="grade-select">
+      <option value="">בחר...</option>
+      <option value="A">A</option>
+      <option value="B">B</option>
+      <option value="C">C</option>
+      <option value="D">D</option>
+      <option value="F">F</option>
+    </select>
+    <button id="btn-grade">הצג הודעה</button>
+    <div class="output" id="grade-output"></div>
+  </section>
+
+  <!-- כרטיסיה 3: סכום 3 או 5 -->
+  <section class="card">
+    <h2>3️⃣ סכום מספרים שמתחלקים ב־3 או 5</h2>
+    <p>
+      הכניסו מספר עליון, והמערכת תחשב את סכום כל המספרים שמתחלקים ב־3 או ב־5 עד אליו.
+      השתמשו בלולאת <code>for</code> ותנאי.
+    </p>
+    <label for="sum-limit">מספר עליון:</label>
+    <input type="number" id="sum-limit" placeholder="למשל: 100">
+    <button id="btn-sum">חשב סכום</button>
+    <div class="output" id="sum-output"></div>
+  </section>
+
+  <!-- כרטיסיה 4: חיפוש במערך -->
+  <section class="card">
+    <h2>4️⃣ חיפוש מספר במערך עם while</h2>
+    <p>
+      המערכת מחפשת את המספר 42 ברשימת מספרים קבועה מראש.
+      השתמשו בלולאת <code>while</code> כדי לעבור על המערך.
+    </p>
+    <button id="btn-find">חפש את 42</button>
+    <div class="output" id="find-output"></div>
+  </section>
+
+  <!-- כרטיסיה 5: סינון מספרים זוגיים ממערך -->
+  <section class="card">
+    <h2>5️⃣ סינון מספרים זוגיים ממערך</h2>
+    <p>
+      יש מערך קבוע של מספרים.
+      כתבו פונקציה שמחזירה רק את המספרים הזוגיים (באמצעות לולאה ותנאי) והציגו אותם.
+    </p>
+    <button id="btn-even-array">הצג מספרים זוגיים במערך</button>
+    <div class="output" id="even-array-output"></div>
+  </section>
+
+  <!-- Checklist -->
+  <section class="checklist">
+    <h2>✅ Checklist משימה</h2>
+    <ul>
+      <li>השתמשתי בלולאת <code>for</code> לפחות פעם אחת</li>
+      <li>השתמשתי בלולאת <code>while</code> לפחות פעם אחת</li>
+      <li>השתמשתי בתנאי <code>if</code></li>
+      <li>השתמשתי ב־<code>switch</code></li>
+      <li>כתבתי לפחות פונקציה אחת שמחזירה ערך</li>
+      <li>הוספתי הערות בקוד להסבר מה קורה</li>
+    </ul>
+  </section>
+</div>
+
+<script src="answers.js"></script>
+</body>
+</html>
